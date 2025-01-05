@@ -64,9 +64,9 @@ const ProfilePage = () => {
             <DashboardNav />
 
             <div className='mt-0 sm:mt-[5rem] w-[100%] flex justify-center items-center'>
-                <div className='w-[100%] md:w-[70%] flex justify-center items-start bg-white rounded-3xl shadow-xl p-8'>
+                <div className='w-[100%] md:w-[70%] md:flex justify-center items-start bg-white rounded-3xl shadow-xl p-8'>
                     {/* Settings Sidebar */}
-                    <div className='w-1/4 pr-8 relative'>
+                    <div className='md:w-1/4 pr-8 relative border-b md:border-b-0 pb-2'>
                         <h2 className='text-lg font-medium mb-6'>Settings</h2>
                         <div className='space-y-3'>
                             {navigationOptions.map((option) => (
@@ -83,7 +83,7 @@ const ProfilePage = () => {
                         </Link>
                     </div>
 
-                    <div className='w-3/4 pl-8 border-l border-gray-200'>
+                    <div className='md:w-3/4 md:pl-8 md:border-l border-gray-200 md:pt-0 pt-2'>
                         {selectedNav === 'user-information' && (
                             <>
                                 <div className='flex justify-between items-center flex-wrap'>
@@ -112,7 +112,7 @@ const ProfilePage = () => {
                         )}
                         {selectedNav === 'security-settings' && (
                             <div>
-                                <div className='flex justify-between items-center'>
+                                <div className='flex justify-between items-center flex-wrap'>
                                     <h2 className='text-2xl'>Security Settings</h2>
                                     <button className='bg-blue-500 text-white px-4 py-2 rounded'>Save changes</button>
                                 </div>

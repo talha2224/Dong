@@ -24,7 +24,7 @@ const HomePage = () => {
                     <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
 
                         <div className='flex justify-between items-center mt-7'>
-                            <p className='text-[#a7a7a7] text-lg'>Welcome, Talha</p>
+                            <p className='text-[#a7a7a7] text-lg'>Welcome, Staurt</p>
                             <MdOutlineArrowOutward className='text-xl' />
                         </div>
 
@@ -61,7 +61,7 @@ const HomePage = () => {
                                         <HiArrowsUpDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to talha</h1>
+                                        <h1 className='font-medium'>Tranffer to Staurt</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@ const HomePage = () => {
                                         <FaLongArrowAltDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Recieved from talha</h1>
+                                        <h1 className='font-medium'>Recieved from Staurt</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@ const HomePage = () => {
                                         <HiArrowsUpDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to talha</h1>
+                                        <h1 className='font-medium'>Tranffer to Staurt</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -283,7 +283,7 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to talha</h1>
+                                        <h1 className='font-medium'>Tranffer to Staurt</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -300,7 +300,7 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to talha</h1>
+                                        <h1 className='font-medium'>Tranffer to Staurt</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to talha</h1>
+                                        <h1 className='font-medium'>Tranffer to Staurt</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -334,7 +334,7 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to talha</h1>
+                                        <h1 className='font-medium'>Tranffer to Staurt</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
