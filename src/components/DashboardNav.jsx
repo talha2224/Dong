@@ -44,7 +44,7 @@ const DashboardNav = () => {
                 </Link>
                 <Link to={"/withdraw"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "withdraw" ? "bg-black" : ""}`} >
                     <PiHandWithdraw className={`${location === "withdraw" ? "text-[#ffff]" : "text-[#000]"}`} />
-                    <p className={` ${location === "withdraw" ? "text-[#ffff]" : "text-[#000]"}`}>Withdrawl</p>
+                    <p className={` ${location === "withdraw" ? "text-[#ffff]" : "text-[#000]"}`}>Withdraw</p>
                 </Link>
                 <Link to={"/history"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "history" ? "bg-black" : ""}`} >
                     <RiHistoryFill className={`${location === "history" ? "text-[#ffff]" : "text-[#000]"}`} />
