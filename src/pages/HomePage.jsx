@@ -158,7 +158,7 @@ const HomePage = () => {
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>buying request</p>
+                                            <p className='text-[#a7a7a7] text-sm'>buying credits</p>
                                         </div>
                                     </div>
 
@@ -197,7 +197,7 @@ const HomePage = () => {
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>buying request</p>
+                                            <p className='text-[#a7a7a7] text-sm'>buying credits</p>
                                         </div>
                                     </div>
 

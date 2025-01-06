@@ -5,6 +5,7 @@ import { LuSquareUserRound } from "react-icons/lu";
 import { MdPrivacyTip, MdMessage } from "react-icons/md";
 import { BiSolidMessageRounded } from "react-icons/bi";
 import { Link } from 'react-router-dom';
+import Img from '../assets/img.jpg';
 
 const ProfilePage = () => {
     const [selectedNav, setSelectedNav] = useState('user-information');
@@ -96,7 +97,7 @@ const ProfilePage = () => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col mb-6'>
-                                    <img className='w-24 h-24 rounded-full bg-gray-300 cursor-pointer' src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+                                    <img className='w-24 h-24 rounded-full bg-gray-300 cursor-pointer' src={Img} alt=""/>
                                 </div>
                                 <div className='grid sm:grid-cols-2 gap-6'>
                                     <div>

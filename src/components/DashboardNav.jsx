@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/logo.png';
+import Img from '../assets/img.jpg';
 import Hamburger from '../assets/hamburger.png';
 import { Link, useLocation } from 'react-router-dom';
 import { VscBellDot } from "react-icons/vsc";
@@ -58,7 +59,7 @@ const DashboardNav = () => {
                 </Link>
 
                 <Link to={"/profile"}>
-                    <img className='w-[2.5rem] h-[2.5rem] rounded-full bg-center ' src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+                    <img className='w-[2.5rem] h-[2.5rem] rounded-full bg-center ' src={Img} alt="" />
                 </Link>
             </div>
 
