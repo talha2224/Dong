@@ -219,7 +219,7 @@ const HomePage = () => {
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>Withdraw</p>
+                                            <p className='text-[#a7a7a7] text-sm'>Withdrawal</p>
                                         </div>
                                     </div>
 
