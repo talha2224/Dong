@@ -79,7 +79,7 @@ const DashboardNav = () => {
                             <div className='flex items-center'><BiTransfer className='mr-2'/>Transfer Credits</div>
                         </Link>
                         <Link to="/withdraw" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                            <div className='flex items-center'><PiHandWithdraw className='mr-2'/>Withdraw</div>
+                            <div className='flex items-center'><PiHandWithdraw className='mr-2'/>Withdrawl</div>
                         </Link>
                         <Link to="/history" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
                            <div className='flex items-center'><RiHistoryFill className='mr-2'/>Transactions</div>
