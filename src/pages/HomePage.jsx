@@ -158,7 +158,7 @@ const HomePage = () => {
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>buying credits</p>
+                                            <p className='text-[#a7a7a7] text-sm'>Buying credit</p>
                                         </div>
                                     </div>
 
@@ -197,7 +197,7 @@ const HomePage = () => {
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>buying credits</p>
+                                            <p className='text-[#a7a7a7] text-sm'>Buying credit</p>
                                         </div>
                                     </div>
 
@@ -219,7 +219,7 @@ const HomePage = () => {
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>withdraws</p>
+                                            <p className='text-[#a7a7a7] text-sm'>Withdraw</p>
                                         </div>
                                     </div>
 
@@ -237,7 +237,7 @@ const HomePage = () => {
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>received</p>
+                                            <p className='text-[#a7a7a7] text-sm'>Received</p>
                                         </div>
                                     </div>
 
