@@ -44,7 +44,7 @@ const DashboardNav = () => {
                 </Link>
                 <Link to={"/withdraw"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "withdraw" ? "bg-black" : ""}`} >
                     <PiHandWithdraw className={`${location === "withdraw" ? "text-[#ffff]" : "text-[#000]"}`} />
-                    <p className={` ${location === "withdraw" ? "text-[#ffff]" : "text-[#000]"}`}>Withdraw</p>
+                    <p className={` ${location === "withdraw" ? "text-[#ffff]" : "text-[#000]"}`}>Withdrawal</p>
                 </Link>
                 <Link to={"/history"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "history" ? "bg-black" : ""}`} >
                     <RiHistoryFill className={`${location === "history" ? "text-[#ffff]" : "text-[#000]"}`} />
@@ -79,7 +79,7 @@ const DashboardNav = () => {
                             <div className='flex items-center'><BiTransfer className='mr-2'/>Transfer Credits</div>
                         </Link>
                         <Link to="/withdraw" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                            <div className='flex items-center'><PiHandWithdraw className='mr-2'/>Withdrawl</div>
+                            <div className='flex items-center'><PiHandWithdraw className='mr-2'/>Withdrawal</div>
                         </Link>
                         <Link to="/history" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
                            <div className='flex items-center'><RiHistoryFill className='mr-2'/>Transactions</div>
