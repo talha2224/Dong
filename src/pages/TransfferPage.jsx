@@ -39,7 +39,7 @@ const TransfferPage = () => {
                 <div className='w-[100%] md:w-[70%] h-[5rem] rounded-md px-3 bg-[#FAF8F8] border border-[#FFFEFE] mt-10 flex justify-center items-center gap-x-7 flex-wrap'>
                     <div>
                         <h1 className='text-2xl font-semibold'>$327,591,814,610</h1>
-                        <p className='text-[#a7a7a7]'>Total Balance</p>
+                        <p className='text-[#a7a7a7]'>Total Balance ($USD)</p>
                     </div>
                     <div>
                         <div className='flex gap-x-3 items-center'>
@@ -48,16 +48,16 @@ const TransfferPage = () => {
                                 <h1 className='font-medium'>Đ 8,189,795,365,250</h1>
                             </div>
                         </div>
-                        <p className='text-[#a7a7a7]'>Credit Balance</p>
+                        <p className='text-[#a7a7a7]'>Credit Balance (Đ)</p>
                     </div>
                 </div>
 
 
                 <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-10'>
 
-                    <p className='text-lg mt-7'>Transffer Credits</p>
+                    <p className='text-lg mt-7'>Transfer Credits</p>
                     <p className='text-[#000] mt-4 text-sm'>User Id</p>
-                    <input type="text" name="" id="" placeholder='Id' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
+                    <input type="text" name="" id="" placeholder='ID' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
                     <p className='text-[#000] mt-4 text-sm'>Amount</p>
                     <input type="number" name="" id="" placeholder='0.00' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
 
@@ -69,7 +69,7 @@ const TransfferPage = () => {
 
                     <p className='text-lg text-center mt-3 '>OR</p>
 
-                    <button onClick={() => setshowQrCode(true)} className='border border-[#0197B2] text-[#0197B2] w-[100%] h-[2.5rem] rounded-md text-sm mt-2'>Share a Qr Code</button>
+                    <button onClick={() => setshowQrCode(true)} className='border border-[#0197B2] text-[#0197B2] w-[100%] h-[2.5rem] rounded-md text-sm mt-2'>Share a QR Code</button>
 
                 </div>
 

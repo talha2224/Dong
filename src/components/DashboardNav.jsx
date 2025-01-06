@@ -39,7 +39,7 @@ const DashboardNav = () => {
                 </Link>
                 <Link to={"/transfer"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "transfer" ? "bg-black" : ""}`} >
                     <BiTransfer className={`${location === "transfer" ? "text-[#ffff]" : "text-[#000]"}`} />
-                    <p className={` ${location === "transfer" ? "text-[#ffff]" : "text-[#000]"}`}>Transffer Credits</p>
+                    <p className={` ${location === "transfer" ? "text-[#ffff]" : "text-[#000]"}`}>Transfer Credits</p>
                 </Link>
                 <Link to={"/withdraw"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "withdraw" ? "bg-black" : ""}`} >
                     <PiHandWithdraw className={`${location === "withdraw" ? "text-[#ffff]" : "text-[#000]"}`} />
