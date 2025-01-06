@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import DashboardNav from '../components/DashboardNav';
-import { FaMinus, FaPlus, FaSignOutAlt, FaTrashAlt } from 'react-icons/fa';
+import { FaImage, FaMinus, FaPlus, FaSignOutAlt, FaTrashAlt } from 'react-icons/fa';
 import { LuSquareUserRound } from "react-icons/lu";
 import { MdPrivacyTip, MdMessage } from "react-icons/md";
 import { BiSolidMessageRounded } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import Img from '../assets/img.jpg';
+import { FaDeleteLeft } from 'react-icons/fa6';
 
 const ProfilePage = () => {
     const [selectedNav, setSelectedNav] = useState('user-information');
@@ -67,21 +68,21 @@ const ProfilePage = () => {
             <div className='mt-0 sm:mt-[5rem] w-[100%] flex justify-center items-center'>
                 <div className='w-[100%] md:w-[70%] md:flex justify-center items-start bg-white rounded-3xl shadow-xl p-8'>
                     {/* Settings Sidebar */}
-                    <div className='md:w-1/4 pr-8 relative border-b md:border-b-0 pb-2'>
+                    <div className='md:w-1/4 pr-8 relative pb-2'>
                         <h2 className='text-lg font-medium mb-6'>Settings</h2>
-                        <div className='space-y-3'>
+                        <div className='flex items-center gap-x-5 md:block md:Withdrawl overflow-x-auto'>
                             {navigationOptions.map((option) => (
-                                <div key={option.value} className={`flex items-center text-gray-600 hover:text-black cursor-pointer ${selectedNav === option.value ? 'font-medium' : ''} ${option.className || ''}`} onClick={() => handleNavigationClick(option.value)}>
+                                <div key={option.value} className={`flex items-center text-gray-600 hover:text-black cursor-pointer pb-2 ${selectedNav === option.value ? 'font-medium border-b border-[#F94D4D] md:border-none' : ''} ${option.className || ''}`} onClick={() => handleNavigationClick(option.value)}>
                                     {option.icon}
                                     <p className='ml-2 text-nowrap truncate'>{option.name}</p>
                                 </div>
                             ))}
+                            <Link to={"/"} className={`flex items-center text-gray-600 hover:text-black cursor-pointer -mt-1 md:mt-0`}>
+                                <FaSignOutAlt />
+                                <p className='ml-2'>{"Logout"}</p>
+                            </Link>
                         </div>
 
-                        <Link to={"/"} className={`flex items-center text-gray-600 hover:text-black cursor-pointer mt-4`}>
-                            <FaSignOutAlt />
-                            <p className='ml-2'>{"Logout"}</p>
-                        </Link>
                     </div>
 
                     <div className='md:w-3/4 md:pl-8 md:border-l border-gray-200 md:pt-0 pt-2'>
@@ -89,15 +90,16 @@ const ProfilePage = () => {
                             <>
                                 <div className='flex justify-between items-center flex-wrap'>
                                     <h2 className='text-lg font-medium mb-6'>User Information</h2>
-                                    <div className='flex gap-x-3'>
-                                        <button className='text-red-500 mr-4 flex items-center'>
-                                            <FaTrashAlt className='mr-1' />Delete account
+                                    <div className='flex gap-x-3 flex-wrap'>
+                                        <button className='text-red-500 mr-4 flex items-center mt-2'>
+                                            <FaDeleteLeft className='mr-1' />Delete account
                                         </button>
-                                        <button className='bg-blue-500 text-white px-4 py-2 rounded'>Save changes</button>
+                                        <button className=' bg-transparent border border-[#007AFF] mt-2 text-[#007AFF] px-4 py-2 rounded'>Save</button>
                                     </div>
                                 </div>
-                                <div className='flex flex-col mb-6'>
-                                    <img className='w-24 h-24 rounded-full bg-gray-300 cursor-pointer' src={Img} alt=""/>
+                                <div className='flex justify-between items-center flex-wrap mb-6'>
+                                    <img className='w-24 h-24 rounded-full bg-gray-300 cursor-pointer mt-2' src={Img} alt="" />
+                                    <button className='bg-[#007AFF] text-[#fff] px-2 py-2 rounded-md text-sm flex items-center gap-x-2 mt-2'><FaImage className='text-[#fff]' /> Change image</button>
                                 </div>
                                 <div className='grid sm:grid-cols-2 gap-6'>
                                     <div>
@@ -115,7 +117,7 @@ const ProfilePage = () => {
                             <div>
                                 <div className='flex justify-between items-center flex-wrap'>
                                     <h2 className='text-2xl'>Security Settings</h2>
-                                    <button className='bg-blue-500 text-white px-4 py-2 rounded'>Save changes</button>
+                                    <button className=' bg-transparent border border-[#007AFF] text-[#007AFF] px-4 py-2 rounded'>Save</button>
                                 </div>
                                 <h2 className='text-lg font-medium mt-6 mb-4'>Password reset</h2>
                                 <div className='space-y-3'>
