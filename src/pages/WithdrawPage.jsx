@@ -23,17 +23,17 @@ const WithdrawPage = () => {
 
                 <div className='w-[100%] md:w-[70%] h-[5rem] rounded-md px-3 bg-[#FAF8F8] border border-[#FFFEFE] mt-10 flex justify-center items-center gap-x-7 flex-wrap'>
                     <div>
-                        <h1 className='text-2xl font-semibold'>$327,591,814,610</h1>
                         <p className='text-[#a7a7a7]'>Total Balance ($USD)</p>
+                        <h1 className='text-2xl font-semibold'>$327,591,814,610</h1>
                     </div>
                     <div>
+                        <p className='text-[#a7a7a7]'>Credit Balance (Đ)</p>
                         <div className='flex gap-x-3 items-center'>
                             <img src={Coin} alt="" className='h-[2rem]' />
                             <div>
                                 <h1 className='font-medium'>Đ 8,189,795,365,250</h1>
                             </div>
                         </div>
-                        <p className='text-[#a7a7a7]'>Credit Balance (Đ)</p>
                     </div>
                 </div>
 
