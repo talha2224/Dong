@@ -43,7 +43,7 @@ const WithdrawPage = () => {
                     <p className='text-xl mt-7'>Withdraw Funds</p>
                     <p className='text-[#FF8A65]'>A small fee of 1% or $5 applies when converting credits back to your currency</p>
                     <p className='text-[#000] mt-4 text-sm'>Amount</p>
-                    <input type="number" name="" id="" placeholder='Enter Amount To Withdraw' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
+                    <input type="number" name="" id="" placeholder='Enter Amount To Withdraw (USD)' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
                     <input type="number" name="" id="" placeholder='Đ 0' className='h-[2.5rem] rounded-md px-3 mt-5 outline-none bg-white w-[100%]' />
 
                     <p className='mt-8 text-sm'>Payment Method</p>
