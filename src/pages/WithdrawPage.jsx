@@ -22,12 +22,12 @@ const WithdrawPage = () => {
             <div className='flex justify-center items-center flex-col'>
 
                 <div className='w-[100%] md:w-[70%] h-[5rem] rounded-md px-3 bg-[#FAF8F8] border border-[#FFFEFE] mt-10 flex justify-center items-center gap-x-7 flex-wrap'>
-                    <div>
-                        <p className='text-[#a7a7a7]'>Total Balance ($USD)</p>
+                    <div className='sm:mt-0 mt-1'>
+                        <p className='text-[#a7a7a7] sm:text-base text-sm'>Total Balance ($USD)</p>
                         <h1 className='text-2xl font-semibold'>$327,591,814,610</h1>
                     </div>
-                    <div>
-                        <p className='text-[#a7a7a7]'>Credit Balance (Đ)</p>
+                    <div className='sm:mt-0 mt-1'>
+                        <p className='text-[#a7a7a7] sm:text-base text-sm'>Credit Balance (Đ)</p>
                         <div className='flex gap-x-3 items-center'>
                             <img src={Coin} alt="" className='h-[2rem]' />
                             <div>
