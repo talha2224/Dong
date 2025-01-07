@@ -83,7 +83,7 @@ const DashboardNav = () => {
                 </div>
 
                 {isMobileNavOpen && (
-                    <div className='absolute top-4 right-0 bg-[#E2E5E6] rounded-lg shadow-lg mt-2 w-48 z-10'>
+                    <div className='absolute top-4 right-0 bg-[#E2E5E6] rounded-lg shadow-lg mt-2 w-[14rem] z-10'>
                         {[
                             { to: "/home", icon: <RiHomeLine />, text: "Home", color: iconColors.home },
                             { to: "/buy", icon: <CiCreditCard1 />, text: "Buy Credits", color: iconColors.buy },
