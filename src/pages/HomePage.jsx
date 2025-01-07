@@ -28,7 +28,7 @@ const HomePage = () => {
                     <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
 
                         <div className='flex justify-between items-center mt-3 sm:mt-7'>
-                            <p className='text-[#a7a7a7] text-lg hidden md:block'>Welcome, Stuart</p>
+                            <p className='text-[#a7a7a7] text-lg hidden md:block font-semibold'>Welcome, Stuart</p>
                             <p className='text-[#a7a7a7] text-lg md:hidden block'>Total Balance </p>
                             <MdOutlineArrowOutward className='text-xl' />
                         </div>
