@@ -56,7 +56,7 @@ const TransfferPage = () => {
                 <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-10'>
 
                     <p className='text-lg mt-7'>Transfer Credits</p>
-                    <p className='text-[#000] mt-4 text-sm'>User Id</p>
+                    <p className='text-[#000] mt-4 text-sm'>User ID</p>
                     <input type="text" name="" id="" placeholder='ID' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
                     <p className='text-[#000] mt-4 text-sm'>Amount</p>
                     <input type="number" name="" id="" placeholder='0.00' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />

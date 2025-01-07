@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import Logo from '../assets/logo.png';
 import Img from '../assets/img.jpg';
-import Hamburger from '../assets/hamburger.png';
+import HamburgerOff from '../assets/off.svg';
+import HamburgerOn from '../assets/on.svg';
 import { Link, useLocation } from 'react-router-dom';
 import { VscBellDot } from "react-icons/vsc";
 import { MdDashboard } from "react-icons/md";
 import { CiCreditCard1 } from "react-icons/ci";
 import { BiTransfer } from "react-icons/bi";
 import { PiHandWithdraw } from "react-icons/pi";
-import { RiHistoryFill } from "react-icons/ri";
-import { FaUser } from 'react-icons/fa'; // Import user icon
+import { RiHistoryFill, RiHomeLine } from "react-icons/ri";
+import { FaRegUser, FaUser } from 'react-icons/fa'; // Import user icon
 
 const DashboardNav = () => {
     const location = useLocation().pathname.split("/")[1];
@@ -19,6 +20,17 @@ const DashboardNav = () => {
         setIsMobileNavOpen(!isMobileNavOpen);
     };
 
+    const activeColor = "#000";
+    const inactiveColor = "#808080";
+    const iconColors = {
+        home: "#FFA500", // Orange
+        buy: "#8A2BE2", // BlueViolet
+        transfer: "#FFA500", // Green
+        withdraw: "#DC143C", // Crimson
+        history: "#008B8B", // DarkCyan
+        notifications: "#FF0000", // Red
+        profile: "#34C759" // Purple
+    };
     return (
         <div className='flex justify-between items-center relative'> {/* Added relative positioning */}
             <div className='flex items-center gap-x-2'>
@@ -28,8 +40,8 @@ const DashboardNav = () => {
 
             {/* Desktop Navigation (Hidden on smaller screens) */}
             <div className='hidden lg:flex items-center gap-x-4 bg-white px-4 py-2 rounded-[4rem]'>
-               {/* ... (Desktop Links - same as before) */}
-               <Link to={"/home"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "home" ? "bg-black" : ""}`} >
+                {/* ... (Desktop Links - same as before) */}
+                <Link to={"/home"} className={`flex items-center gap-x-2 py-2 px-4 rounded-3xl ${location === "home" ? "bg-black" : ""}`} >
                     <MdDashboard className={`${location === "home" ? "text-[#ffff]" : "text-[#000]"}`} />
                     <p className={` ${location === "home" ? "text-[#ffff]" : "text-[#000]"}`}>Dashboard</p>
                 </Link>
@@ -64,32 +76,30 @@ const DashboardNav = () => {
             </div>
 
             {/* Mobile Navigation (Visible on smaller screens) */}
-            <div className='lg:hidden block relative'> {/* Added relative positioning */}
-                <img src={Hamburger} alt="" className='cursor-pointer' onClick={toggleMobileNav} />
+            <div className='lg:hidden block relative'>
+
+                <div className={`${!isMobileNavOpen && "bg-white rounded-full"} p-2 fixed right-2 top-4`}>
+                    <img src={isMobileNavOpen ? HamburgerOn : HamburgerOff} alt="" className={`cursor-pointer ${isMobileNavOpen && "w-[1.8rem] "}`} onClick={toggleMobileNav} />
+                </div>
 
                 {isMobileNavOpen && (
-                    <div className='absolute top-full right-0 bg-white rounded-lg shadow-lg mt-2 w-48 z-10'> {/* Dropdown container */}
-                        <Link to="/home" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                            <div className='flex items-center'><MdDashboard className='mr-2'/>Home</div>
-                        </Link>
-                        <Link to="/buy" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                            <div className='flex items-center'><CiCreditCard1 className='mr-2'/>Buy Credits</div>
-                        </Link>
-                        <Link to="/transfer" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                            <div className='flex items-center'><BiTransfer className='mr-2'/>Transfer Credits</div>
-                        </Link>
-                        <Link to="/withdraw" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                            <div className='flex items-center'><PiHandWithdraw className='mr-2'/>Withdrawal</div>
-                        </Link>
-                        <Link to="/history" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                           <div className='flex items-center'><RiHistoryFill className='mr-2'/>Transactions</div>
-                        </Link>
-                        <Link to="/profile" className='block px-4 py-2 hover:bg-gray-100' onClick={toggleMobileNav}>
-                            <div className='flex items-center'><VscBellDot className='mr-2'/>Notifications</div>
-                        </Link>
-                        <Link to="/profile" className='block px-4 py-2 hover:bg-gray-100 rounded-b-lg' onClick={toggleMobileNav}>
-                        <div className='flex items-center'><FaUser className='mr-2'/>Profile</div>
-                        </Link>
+                    <div className='absolute top-4 right-0 bg-[#E2E5E6] rounded-lg shadow-lg mt-2 w-48 z-10'>
+                        {[
+                            { to: "/home", icon: <RiHomeLine />, text: "Home", color: iconColors.home },
+                            { to: "/buy", icon: <CiCreditCard1 />, text: "Buy Credits", color: iconColors.buy },
+                            { to: "/transfer", icon: <BiTransfer />, text: "Transfer Credits", color: iconColors.transfer },
+                            { to: "/withdraw", icon: <PiHandWithdraw />, text: "Withdraw", color: iconColors.withdraw },
+                            { to: "/history", icon: <RiHistoryFill />, text: "Transactions", color: iconColors.history },
+                            { to: "/profile", icon: <VscBellDot />, text: "Notifications", color: iconColors.notifications },
+                            { to: "/profile", icon: <FaRegUser className='' />, text: "Profile", color: iconColors.profile },
+                        ].map((link, index) => (
+                            <Link key={index} to={link.to} className={`px-4 py-2 ${link.to.includes(location) && "bg-[#fff] m-1 rounded-xl"} flex items-center`}>
+                                <div className="flex items-center w-full"> {/* Added w-full here */}
+                                    {React.cloneElement(link.icon, { className: `mr-2 text-xl`, style: { color: link.color } })}
+                                    <span>{link.text}</span> {/* Use a span for the text */}
+                                </div>
+                            </Link>
+                        ))}
                     </div>
                 )}
             </div>

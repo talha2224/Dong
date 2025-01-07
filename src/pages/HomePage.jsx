@@ -9,6 +9,7 @@ import Chart from '../assets/chart.png'
 import Coin from '../assets/coin.png'
 import Line from '../assets/line.png'
 import { HiArrowSmUp } from 'react-icons/hi';
+import { FaEye } from "react-icons/fa";
 
 
 const HomePage = () => {
@@ -18,23 +19,34 @@ const HomePage = () => {
 
             <DashboardNav />
 
-            <div className='flex items-start gap-x-3 mt-[2rem] flex-wrap'>
+            <p className='text-[#000] text-lg block md:hidden my-5 font-medium'>Welcome, Stuart</p>
+
+            <div className='flex items-start gap-x-3 md:mt-[2rem] flex-wrap'>
 
                 <div className='w-[25rem] mt-2'>
 
                     <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
 
-                        <div className='flex justify-between items-center mt-7'>
-                            <p className='text-[#a7a7a7] text-lg'>Welcome, Stuart</p>
+                        <div className='flex justify-between items-center mt-3 sm:mt-7'>
+                            <p className='text-[#a7a7a7] text-lg hidden md:block'>Welcome, Stuart</p>
+                            <p className='text-[#a7a7a7] text-lg md:hidden block'>Total Balance </p>
                             <MdOutlineArrowOutward className='text-xl' />
                         </div>
 
-                        <h1 className='text-2xl font-semibold mt-2'>$327,591,814,610</h1>
-                        <p className='text-[#a7a7a7] text-lg'>Total Balance ($USD)</p>
+                        <div className='flex items-center gap-x-2 md:mt-2'>
+                            <h1 className='text-2xl font-semibold '>$327,591,814,610</h1>
+                            <FaEye className='pr-1 md:text-black text-[#FF8A65] text-xl'
+                            />
+                        </div>
 
-                        <div className='my-7'>
-                            <p className='text-[#a7a7a7] text-lg'>Credit Balance (Đ)</p>
-                            <h1 className='text-2xl font-medium'>Đ 8,189,795,365,250</h1>
+                        <p className='text-[#a7a7a7] text-lg hidden md:block'>Total Balance ($USD)</p>
+
+                        <div className='mt-10 sm:my-7'>
+                            <p className='text-[#a7a7a7] text-sm'>Credit Balance</p>
+                            <div className='flex items-center gap-x-2 mt-1'>
+                                <img src={Coin} alt="" className='w-[2rem]' />
+                                <h1 className='text-xl font-medium'>Đ 8,189,795,365,250</h1>
+                            </div>
                         </div>
 
 
@@ -62,7 +74,7 @@ const HomePage = () => {
                                         <HiArrowsUpDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to Stuart</h1>
+                                        <h1 className='font-medium'>Transfer to Stuart</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -81,7 +93,7 @@ const HomePage = () => {
                                         <FaLongArrowAltDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Recieved from Stuart</h1>
+                                        <h1 className='font-medium'>Received from Stuart</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -100,7 +112,7 @@ const HomePage = () => {
                                         <HiArrowsUpDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to Stuart</h1>
+                                        <h1 className='font-medium'>Transfer to Stuart</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
                                     </div>
                                 </div>
@@ -125,130 +137,133 @@ const HomePage = () => {
                         <img src={Chart} alt="" className='h-[15rem]' />
                     </div>
 
-                    <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-4'>
+                    <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-3 sm:px-5 mt-4'>
 
-                        <p className='text-lg  mt-7'>Credit Usage Trend</p>
+                        <p className='text-lg  mt-7'>Credit Usage Trends</p>
 
                         <div className='my-2'>
-                            <div className='flex justify-between items-center gap-x-3 flex-wrap'>
 
-                                <div className='flex justify-between items-center bg-white px-3 py-2 rounded-3xl flex-1'>
+                            <div className='flex justify-between items-center gap-x-1 sm:gap-x-3 flex-wrap'>
+
+                                <div className='flex justify-between items-center bg-white px-2 sm:px-3 py-1 sm:mt-0 mt-2 sm:py-2 rounded-3xl flex-1'>
 
                                     <div className='flex gap-x-3 items-center'>
-                                        <div className='w-[2rem] h-[2rem] rounded-full bg-[#FF9500] flex justify-center items-center'>
+                                        <div className='w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] rounded-full bg-[#FF9500] flex justify-center items-center'>
                                             <HiArrowsUpDown className={`text-white`} />
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>Transfer</p>
+                                            <p className='text-[#a7a7a7] text-xs sm:text-sm'>Transfers</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <h1 className='text-[#a7a7a7] text-xl'>36%</h1>
+                                        <h1 className='text-[#a7a7a7] text-sm sm:text-xl'>36%</h1>
                                     </div>
 
                                 </div>
 
-                                <div className='flex justify-between items-center bg-white px-3 py-2 rounded-3xl flex-1'>
+                                <div className='flex justify-between items-center bg-white px-2 sm:px-3 py-1 sm:mt-0 mt-2 sm:py-2 rounded-3xl flex-1'>
 
                                     <div className='flex gap-x-3 items-center'>
-                                        <div className='w-[2rem] h-[2rem] rounded-full bg-[#735CD8] flex justify-center items-center'>
+                                        <div className='w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] rounded-full bg-[#735CD8] flex justify-center items-center'>
                                             <CiCreditCard1 className={`text-white`} />
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>Buying credit</p>
+                                            <p className='text-[#a7a7a7] text-xs sm:text-sm truncate'>Buying credits</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <h1 className='text-[#a7a7a7] text-xl'>36%</h1>
+                                        <h1 className='text-[#a7a7a7] text-sm sm:text-xl'>24%</h1>
                                     </div>
 
                                 </div>
 
                             </div>
-                            <div className='flex justify-between items-start mt-3 flex-wrap'>
+                            
+                            {/* <div className='flex justify-between items-center gap-x-1 sm:gap-x-3 mt-2 flex-wrap'>
 
-                                <div className='flex justify-between items-center bg-white px-3 py-2 rounded-3xl flex-1'>
+                                <div className='flex justify-between items-center bg-white px-2 sm:px-3 py-1 sm:mt-0 mt-2 sm:py-2 rounded-3xl flex-1'>
 
                                     <div className='flex gap-x-3 items-center'>
-                                        <div className='w-[2rem] h-[2rem] rounded-full bg-[#FF9500] flex justify-center items-center'>
+                                        <div className='w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] rounded-full bg-[#FF9500] flex justify-center items-center'>
                                             <HiArrowsUpDown className={`text-white`} />
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>Transfer</p>
+                                            <p className='text-[#a7a7a7] text-xs sm:text-sm'>Transfers</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <h1 className='text-[#a7a7a7] text-xl'>36%</h1>
+                                        <h1 className='text-[#a7a7a7] text-sm sm:text-xl'>36%</h1>
                                     </div>
 
                                 </div>
 
-                                <div className='flex justify-between items-center bg-white px-3 py-2 rounded-3xl flex-1'>
+                                <div className='flex justify-between items-center bg-white px-2 sm:px-3 py-1 sm:mt-0 mt-2 sm:py-2 rounded-3xl flex-1'>
 
                                     <div className='flex gap-x-3 items-center'>
-                                        <div className='w-[2rem] h-[2rem] rounded-full bg-[#735CD8] flex justify-center items-center'>
+                                        <div className='w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] rounded-full bg-[#735CD8] flex justify-center items-center'>
                                             <CiCreditCard1 className={`text-white`} />
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>Buying credit</p>
+                                            <p className='text-[#a7a7a7] text-xs sm:text-sm truncate'>Buying credits</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <h1 className='text-[#a7a7a7] text-xl'>36%</h1>
+                                        <h1 className='text-[#a7a7a7] text-sm sm:text-xl'>24%</h1>
                                     </div>
 
                                 </div>
 
+                            </div> */}
 
-                            </div>
-                            <div className='flex justify-between items-start mt-3 flex-wrap'>
+                            <div className='flex justify-between gap-x-1 sm:gap-x-3 items-start mt-2 flex-wrap'>
 
-                                <div className='flex justify-between items-center bg-white px-3 py-2 rounded-3xl flex-1'>
+                                <div className='flex justify-between items-center mt-2 sm:mt-0 bg-white px-2 sm:px-3 py-1 sm:py-2 rounded-3xl flex-1'>
 
                                     <div className='flex gap-x-3 items-center'>
-                                        <div className='w-[2rem] h-[2rem] rounded-full bg-[#34C759] flex justify-center items-center'>
+                                        <div className='w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] rounded-full bg-[#34C759] flex justify-center items-center'>
                                             <FaLongArrowAltDown className={`text-white`} />
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>Withdrawal</p>
+                                            <p className='text-[#a7a7a7] text-xs sm:text-sm'>Withdrawal</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <h1 className='text-[#a7a7a7] text-xl'>36%</h1>
+                                        <h1 className='text-[#a7a7a7] text-sm sm:text-xl'>20%</h1>
                                     </div>
 
                                 </div>
 
-                                <div className='flex justify-between items-center bg-white px-3 py-2 rounded-3xl flex-1'>
+                                <div className='flex justify-between items-center mt-2 sm:mt-0 bg-white px-2 sm:px-3 py-1 sm:py-2 rounded-3xl flex-1'>
 
                                     <div className='flex gap-x-3 items-center'>
-                                        <div className='w-[2rem] h-[2rem] rounded-full bg-[#0197B2] flex justify-center items-center'>
+                                        <div className='w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] rounded-full bg-[#0197B2] flex justify-center items-center'>
                                             <HiArrowSmUp className={`text-white`} />
                                         </div>
                                         <div>
                                             <h1 className='font-medium'>1.9m</h1>
-                                            <p className='text-[#a7a7a7] text-sm'>Received</p>
+                                            <p className='text-[#a7a7a7] text-xs sm:text-sm'>Received</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <h1 className='text-[#a7a7a7] text-xl'>36%</h1>
+                                        <h1 className='text-[#a7a7a7] text-sm sm:text-xl'>20%</h1>
                                     </div>
 
                                 </div>
 
 
                             </div>
+
                         </div>
 
                     </div>
@@ -284,14 +299,13 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to Stuart</h1>
-                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
+                                        <h1 className='font-medium'>1 Đ - <span className='text-[#a7a7a7] text-sm'>$0.04</span> </h1>
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className=' flex items-center gap-x-2'>
                                     <img src={Line} alt="" />
-                                    <h1 className='text-[#FF9500]'>-20 coin</h1>
+                                    <h1 className='text-[#27c249]'>+32%</h1>
                                 </div>
 
                             </div>
@@ -301,14 +315,13 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to Stuart</h1>
-                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
+                                        <h1 className='font-medium'>12 Đ - <span className='text-[#a7a7a7] text-sm'>$0.48</span> </h1>
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className=' flex items-center gap-x-2'>
                                     <img src={Line} alt="" />
-                                    <h1 className='text-[#FF9500]'>-20 coin</h1>
+                                    <h1 className='text-[#ec3434]'>+0.2%</h1>
                                 </div>
 
                             </div>
@@ -318,14 +331,13 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to Stuart</h1>
-                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
+                                        <h1 className='font-medium'>21 Đ - <span className='text-[#a7a7a7] text-sm'>$0.84</span> </h1>
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className=' flex items-center gap-x-2'>
                                     <img src={Line} alt="" />
-                                    <h1 className='text-[#FF9500]'>-20 coin</h1>
+                                    <h1 className='text-[#27c249]'>+22%</h1>
                                 </div>
 
                             </div>
@@ -335,14 +347,13 @@ const HomePage = () => {
                                 <div className='flex gap-x-3 items-center'>
                                     <img src={Coin} alt="" className='h-[2rem]' />
                                     <div>
-                                        <h1 className='font-medium'>Tranffer to Stuart</h1>
-                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
+                                        <h1 className='font-medium'>55 Đ - <span className='text-[#a7a7a7] text-sm'>$2.20</span> </h1>
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className=' flex items-center gap-x-2'>
                                     <img src={Line} alt="" />
-                                    <h1 className='text-[#FF9500]'>-20 coin</h1>
+                                    <h1 className='text-[#ec3434]'>-12%</h1>
                                 </div>
 
                             </div>
