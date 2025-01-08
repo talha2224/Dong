@@ -77,13 +77,13 @@ const HomePage = () => {
                                     </div>
                                     <div>
                                         <h1 className='font-medium'>Transfer to Stuart</h1>
-                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
+                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024 23:26</p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <h1 className='text-[#FF9500]'>-20 credits</h1>
-                                    <button className='bg-[#C9FFD6] text-[#34C759] rounded-3xl py-1 px-2 text-sm'>Successful</button>
+                                    <h1 className='text-[#FF9500] text-sm sm:text-base sm:mb-0 mb-1'>-20 credits</h1>
+                                    <button className='bg-[#C9FFD6] text-[#34C759] rounded-3xl py-1 px-2 text-xs'>Successful</button>
                                 </div>
 
                             </div>
@@ -96,13 +96,13 @@ const HomePage = () => {
                                     </div>
                                     <div>
                                         <h1 className='font-medium'>Received from Stuart</h1>
-                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
+                                        <p className='text-[#a7a7a7] text-sm'>Dec 8, 2024 23:26</p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <h1 className='text-[#FF9500]'>+20 credits</h1>
-                                    <button className='bg-[#C9FFD6] text-[#34C759] rounded-3xl py-1 px-2 text-sm'>Successful</button>
+                                    <h1 className='text-[#0197B2] text-sm sm:text-base sm:mb-0 mb-1'>+1 credit</h1>
+                                    <button className='bg-[#C9FFD6] text-[#34C759] rounded-3xl py-1 px-2 text-xs'>Successful</button>
                                 </div>
 
                             </div>
@@ -111,17 +111,17 @@ const HomePage = () => {
 
                                 <div className='flex gap-x-3 items-center'>
                                     <div className='w-[2rem] h-[2rem] rounded-full bg-[#0197B2] flex justify-center items-center'>
-                                        <HiArrowsUpDown className={`text-white`} />
+                                        <BsCash className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Transfer to Stuart</h1>
-                                        <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024</p>
+                                        <h1 className='font-medium'>Withdrawal</h1>
+                                        <p className='text-[#a7a7a7] text-sm'>Dec 9, 2024 23:26</p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <h1 className='text-[#FF9500]'>-20 credits</h1>
-                                    <button className='bg-[#C9FFD6] text-[#34C759] rounded-3xl py-1 px-2 text-sm'>Successful</button>
+                                    <h1 className='text-[#FF9500] sm:text-base text-sm sm:mb-0 mb-1'>-1 credit</h1>
+                                    <button className='bg-[#C9FFD6] text-[#34C759] rounded-3xl py-1 px-2 text-xs'>Successful</button>
                                 </div>
 
                             </div>
