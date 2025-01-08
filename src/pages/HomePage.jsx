@@ -250,7 +250,7 @@ const HomePage = () => {
 
                     </div>
 
-                    <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-4'>
+                    <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-4 sm:mb-0 mb-4'>
 
                         <p className='text-lg mt-7'>Credits</p>
 
