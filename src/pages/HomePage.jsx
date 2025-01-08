@@ -76,7 +76,7 @@ const HomePage = () => {
                                         <HiArrowsUpDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Transfer to Stuart</h1>
+                                        <h1 className='font-medium sm:text-base text-sm'>Transfer to Stuart</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 7, 2024 23:26</p>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ const HomePage = () => {
                                         <FaLongArrowAltDown className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Received from Stuart</h1>
+                                        <h1 className='font-medium sm:text-base text-sm'>Received from Stuart</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 8, 2024 23:26</p>
                                     </div>
                                 </div>
@@ -114,7 +114,7 @@ const HomePage = () => {
                                         <BsCash className={`text-white`} />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium'>Withdrawal</h1>
+                                        <h1 className='font-medium sm:text-base text-sm'>Withdrawal</h1>
                                         <p className='text-[#a7a7a7] text-sm'>Dec 9, 2024 23:26</p>
                                     </div>
                                 </div>
