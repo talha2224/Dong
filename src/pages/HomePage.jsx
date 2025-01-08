@@ -6,6 +6,9 @@ import { FaLongArrowAltDown } from "react-icons/fa";
 import { CiCreditCard1 } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa6";
 import Chart from '../assets/chart.png'
+import Pos from '../assets/pos.png'
+import Neg from '../assets/neg.png'
+
 import Coin from '../assets/coin.png'
 import Line from '../assets/line.png'
 import { FaEye } from "react-icons/fa";
@@ -263,7 +266,7 @@ const HomePage = () => {
                                 </div>
 
                                 <div className=' flex items-center gap-x-2'>
-                                    <img src={Line} alt="" />
+                                    <img src={Pos} alt="" />
                                     <h1 className='text-[#27c249]'>+32%</h1>
                                 </div>
 
@@ -279,7 +282,7 @@ const HomePage = () => {
                                 </div>
 
                                 <div className=' flex items-center gap-x-2'>
-                                    <img src={Line} alt="" />
+                                    <img src={Neg} alt="" />
                                     <h1 className='text-[#ec3434]'>+0.2%</h1>
                                 </div>
 
@@ -295,7 +298,7 @@ const HomePage = () => {
                                 </div>
 
                                 <div className=' flex items-center gap-x-2'>
-                                    <img src={Line} alt="" />
+                                    <img src={Pos} alt="" />
                                     <h1 className='text-[#27c249]'>+22%</h1>
                                 </div>
 
@@ -311,7 +314,7 @@ const HomePage = () => {
                                 </div>
 
                                 <div className=' flex items-center gap-x-2'>
-                                    <img src={Line} alt="" />
+                                    <img src={Neg} alt="" />
                                     <h1 className='text-[#ec3434]'>-12%</h1>
                                 </div>
 
