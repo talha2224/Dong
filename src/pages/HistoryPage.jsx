@@ -1,7 +1,9 @@
 import React from 'react';
 import DashboardNav from '../components/DashboardNav';
-import { FaArrowDown, FaArrowUp, FaExchangeAlt, FaCheckCircle } from 'react-icons/fa'; // Import icons
+import { FaArrowDown, FaArrowUp, FaExchangeAlt, FaCheckCircle, FaLongArrowAltDown } from 'react-icons/fa'; // Import icons
 import { FaDeleteLeft } from "react-icons/fa6";
+import { BsCash } from 'react-icons/bs';
+import { HiArrowsUpDown } from 'react-icons/hi2';
 
 const HistoryPage = () => {
     const transactions = [
@@ -16,7 +18,7 @@ const HistoryPage = () => {
 
             <div className='flex justify-center items-center'>
 
-                <div className='mt-[6rem] bg-white rounded-3xl shadow-xl p-6 lg:w-[55%]'>
+                <div className='mt-[6rem] bg-white rounded-3xl shadow-xl p-2 sm:p-6 lg:w-[55%]'>
 
                     <div className='flex justify-between items-center flex-wrap gap-x-3'>
                         <h2 className='text-lg font-medium mt-2'>Recent transactions</h2>
@@ -30,16 +32,25 @@ const HistoryPage = () => {
                         {transactions.map((transaction, index) => (
                             <div key={index} className='flex items-center justify-between mt-3'>
                                 <div className='flex items-center'>
-                                    {transaction.type === 'Withdrawal' && <FaArrowDown className='text-red-500 mr-3' />}
-                                    {transaction.type === 'Received from Diiiiiirrr...' && <FaArrowUp className='text-green-500 mr-3' />}
-                                    {transaction.type === 'Transfer to 00cb4yrrm...' && <FaExchangeAlt className='text-blue-500 mr-3' />}
+                                    {transaction.type === 'Withdrawal' && <div className='w-[1.9rem] h-[1.9rem] mr-2 rounded-full bg-[#00c7be] flex justify-center items-center'>
+                                        <BsCash className={`text-white`} />
+                                    </div>}
+                                    {transaction.type === 'Received from Diiiiiirrr...' && <div className='w-[1.9rem] h-[1.9rem] mr-2 rounded-full bg-[#34C759] flex justify-center items-center'>
+                                        <FaLongArrowAltDown className={`text-white`} />
+                                    </div>}
+                                    {transaction.type === 'Transfer to 00cb4yrrm...' && <div className='w-[1.9rem] h-[1.9rem] mr-2  rounded-full bg-[#0197B2] flex justify-center items-center'>
+                                        <HiArrowsUpDown className={`text-white`} />
+                                    </div>}
                                     <div>
-                                        <p className='text-sm font-medium'>{transaction.type}</p>
+                                        <p className='text-sm font-medium text-nowrap truncate'>{transaction.type}</p>
                                         <p className='text-xs text-gray-400'>{transaction.date}</p>
                                     </div>
                                 </div>
-                                <div className='flex items-center gap-x-2'>
-                                    <p className={`text-sm mr-2 ${transaction.amount.startsWith('+') ? 'text-green-500' : 'text-red-500'}`}>{transaction.amount}</p>
+                                <div className='flex items-center gap-x-1 sm:gap-x-2'>
+                                    <div>
+                                        <p className={`text-sm mr-2 ${transaction.amount.startsWith('+') ? 'text-[#00c7be]' : 'text-[#ff9500]'}`}>{transaction.amount}</p>
+                                        <button className='bg-[#C9FFD6] text-[#34C759] rounded-3xl py-[2px] px-2 text-xs'>Successful</button>
+                                    </div>
                                     <FaDeleteLeft className='text-red-500' />
                                     <div className='text-gray-400'>&gt;</div>
                                 </div>
