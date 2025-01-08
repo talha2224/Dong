@@ -9,6 +9,7 @@ import TransfferPage from './pages/TransfferPage'
 import WithdrawPage from './pages/WithdrawPage'
 import HistoryPage from './pages/HistoryPage'
 import ProfilePage from './pages/ProfilePage'
+import NotificationPage from './pages/NotificationPage'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path='/withdraw' element={<WithdrawPage/>}/>
       <Route path='/history' element={<HistoryPage/>}/>
       <Route path='/profile' element={<ProfilePage/>}/>
+      <Route path='/notification' element={<NotificationPage/>}/>
     </Routes>
     </BrowserRouter>
   )

@@ -7,6 +7,8 @@ import MasterCard from '../assets/mastercard.png'
 import Add from '../assets/add.png'
 import { FaAngleRight } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
+import { MdOutlineArrowOutward } from 'react-icons/md'
+import { FaEye } from 'react-icons/fa'
 
 const BuyPage = () => {
 
@@ -20,7 +22,26 @@ const BuyPage = () => {
         <div className='px-3 sm:px-10 py-4 bg-[#F7F7F7] w-screen h-screen'>
             <DashboardNav />
 
-            <div className='flex justify-center items-start gap-x-7 mt-[2rem] flex-wrap'>
+
+            <div className='flex sm:hidden justify-center items-center mt-[2rem]'>
+                <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
+
+                    <p className='text-[#a7a7a7] text-sm '>Total Balance </p>
+
+                    <div className='flex items-center gap-x-2 md:mt-2'>
+                        <h1 className='text-2xl font-semibold '>$327,591,814,610</h1>
+                        <FaEye className='pr-1 md:text-black text-[#FF8A65] text-xl'
+                        />
+                    </div>
+
+                    <p className='text-[#a7a7a7] text-lg hidden md:block'>Total Balance ($USD)</p>
+
+
+
+                </div>
+            </div>
+
+            <div className='flex justify-center items-start gap-x-7 mt-[1rem] flex-wrap'>
 
                 <div className='w-[25rem] mt-2'>
 

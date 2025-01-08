@@ -7,6 +7,8 @@ import Transffered from '../assets/transferred.png'
 
 import { FaAngleRight } from 'react-icons/fa6'
 import { ImCross } from 'react-icons/im'
+import { MdOutlineArrowOutward } from 'react-icons/md'
+import { FaEye } from 'react-icons/fa'
 
 const WithdrawPage = () => {
 
@@ -21,7 +23,7 @@ const WithdrawPage = () => {
             <DashboardNav />
             <div className='flex justify-center items-center flex-col'>
 
-                <div className='w-[100%] md:w-[70%] h-[5rem] rounded-md px-3 bg-[#FAF8F8] border border-[#FFFEFE] mt-10 flex justify-center items-center gap-x-7 flex-wrap'>
+                <div className='w-[100%] md:w-[70%] h-[5rem] rounded-md px-3 bg-[#FAF8F8] border border-[#FFFEFE] mt-10 hidden sm:flex justify-center items-center gap-x-7 flex-wrap'>
                     <div className='sm:mt-0 mt-1'>
                         <p className='text-[#a7a7a7] sm:text-base text-sm'>Total Balance ($USD)</p>
                         <h1 className='text-2xl font-semibold'>$327,591,814,610</h1>
@@ -37,8 +39,36 @@ const WithdrawPage = () => {
                     </div>
                 </div>
 
+                <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] mt-10 py-3 px-5 sm:hidden'>
 
-                <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-10'>
+                    <div className='flex justify-between items-center mt-3 sm:mt-7'>
+                        <p className='text-[#a7a7a7] text-lg hidden md:block font-semibold'>Welcome, Stuart</p>
+                        <p className='text-[#a7a7a7] text-lg md:hidden block'>Total Balance </p>
+                        <MdOutlineArrowOutward className='text-xl' />
+                    </div>
+
+                    <div className='flex items-center gap-x-2 md:mt-2'>
+                        <h1 className='text-2xl font-semibold '>$327,591,814,610</h1>
+                        <FaEye className='pr-1 md:text-black text-[#FF8A65] text-xl'
+                        />
+                    </div>
+
+                    <p className='text-[#a7a7a7] text-lg hidden md:block'>Total Balance ($USD)</p>
+
+                    <div className='mt-10 sm:my-7'>
+                        <p className='text-[#a7a7a7] text-sm'>Credit Balance</p>
+                        <div className='flex items-center gap-x-2 mt-1'>
+                            <img src={Coin} alt="" className='w-[2rem]' />
+                            <h1 className='text-xl font-medium'>Đ 8,189,795,365,250</h1>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-3 sm:mt-10'>
 
                     <p className='text-xl mt-7'>Withdraw Funds</p>
                     <p className='text-[#FF8A65]'>A small fee of 1% or $5 applies when converting credits back to your currency</p>

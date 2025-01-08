@@ -33,10 +33,10 @@ const DashboardNav = () => {
     };
     return (
         <div className='flex justify-between items-center relative'> {/* Added relative positioning */}
-            <div className='flex items-center gap-x-2'>
+            <Link to={"/home"} className='flex items-center gap-x-2 cursor-pointer'>
                 <img src={Logo} alt="" className='h-[2rem]' />
                 <p className='text-2xl font-medium'>Dong</p>
-            </div>
+            </Link>
 
             {/* Desktop Navigation (Hidden on smaller screens) */}
             <div className='hidden lg:flex items-center gap-x-4 bg-white px-4 py-2 rounded-[4rem]'>
@@ -65,8 +65,7 @@ const DashboardNav = () => {
             </div>
 
             <div className='hidden lg:flex items-center gap-x-4'>
-                {/* ... (Notification and profile icon - same as before) */}
-                <Link to={"/profile"} className='w-[2.5rem] h-[2.5rem] rounded-full flex justify-center items-center bg-white cursor-pointer'>
+                <Link to={"/notification"} className='w-[2.5rem] h-[2.5rem] rounded-full flex justify-center items-center bg-white cursor-pointer'>
                     <VscBellDot className='text-xl' />
                 </Link>
 
@@ -78,19 +77,19 @@ const DashboardNav = () => {
             {/* Mobile Navigation (Visible on smaller screens) */}
             <div className='lg:hidden block relative'>
 
-                <div className={`${!isMobileNavOpen && "bg-white rounded-full"} p-2 fixed right-2 top-4`}>
+                <div className={`${!isMobileNavOpen && "bg-white rounded-full"} p-2 `}>
                     <img src={isMobileNavOpen ? HamburgerOn : HamburgerOff} alt="" className={`cursor-pointer ${isMobileNavOpen && "w-[1.8rem] "}`} onClick={toggleMobileNav} />
                 </div>
 
                 {isMobileNavOpen && (
-                    <div className='absolute top-4 right-0 bg-[#E2E5E6] rounded-lg shadow-lg mt-2 w-[14rem] z-10'>
+                    <div className='absolute top-4 right-0 bg-[#E2E5E6] rounded-lg shadow-lg mt-10 w-[14rem] z-10'>
                         {[
                             { to: "/home", icon: <RiHomeLine />, text: "Home", color: iconColors.home },
                             { to: "/buy", icon: <CiCreditCard1 />, text: "Buy Credits", color: iconColors.buy },
                             { to: "/transfer", icon: <BiTransfer />, text: "Transfer Credits", color: iconColors.transfer },
                             { to: "/withdraw", icon: <PiHandWithdraw />, text: "Withdraw", color: iconColors.withdraw },
                             { to: "/history", icon: <RiHistoryFill />, text: "Transactions", color: iconColors.history },
-                            { to: "/profile", icon: <VscBellDot />, text: "Notifications", color: iconColors.notifications },
+                            { to: "/notification", icon: <VscBellDot />, text: "Notifications", color: iconColors.notifications },
                             { to: "/profile", icon: <FaRegUser className='' />, text: "Profile", color: iconColors.profile },
                         ].map((link, index) => (
                             <Link key={index} to={link.to} className={`px-4 py-2 ${link.to.includes(location) && "bg-[#fff] m-1 rounded-xl"} flex items-center`}>

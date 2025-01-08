@@ -7,6 +7,7 @@ import { BiSolidMessageRounded } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import Img from '../assets/img.jpg';
 import { FaDeleteLeft } from 'react-icons/fa6';
+import { FiSave } from 'react-icons/fi';
 
 const ProfilePage = () => {
     const [selectedNav, setSelectedNav] = useState('user-information');
@@ -65,8 +66,8 @@ const ProfilePage = () => {
         <div className='px-3 md:px-10 py-4 bg-[#F7F7F7] w-screen h-screen'>
             <DashboardNav />
 
-            <div className='mt-0 sm:mt-[5rem] w-[100%] flex justify-center items-center'>
-                <div className='w-[100%] md:w-[70%] md:flex justify-center items-start bg-white rounded-3xl shadow-xl p-8'>
+            <div className='mt-6 sm:mt-[5rem] w-[100%] flex justify-center items-center'>
+                <div className='w-[100%] md:w-[70%] md:flex justify-center items-start bg-white rounded-3xl shadow-xl p-4 sm:p-8 mb-4'>
                     {/* Settings Sidebar */}
                     <div className='md:w-1/4 pr-8 relative pb-2'>
                         <h2 className='text-lg font-medium mb-6'>Settings</h2>
@@ -94,7 +95,7 @@ const ProfilePage = () => {
                                         <button className='text-red-500 mr-4 flex items-center mt-2'>
                                             <FaDeleteLeft className='mr-1' />Delete account
                                         </button>
-                                        <button className=' bg-transparent border border-[#007AFF] mt-2 text-[#007AFF] px-4 py-2 rounded'>Save</button>
+                                        <button className='bg-transparent border border-[#007AFF] mt-2 text-[#007AFF] px-4 py-2 rounded-md flex items-center gap-x-2'> <FiSave/> Save</button>
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center flex-wrap mb-6'>
