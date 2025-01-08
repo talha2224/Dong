@@ -110,7 +110,7 @@ const HomePage = () => {
                             <div className='flex justify-between items-start mt-3'>
 
                                 <div className='flex gap-x-3 items-center'>
-                                    <div className='w-[2rem] h-[2rem] rounded-full bg-[#0197B2] flex justify-center items-center'>
+                                    <div className='w-[2rem] h-[2rem] rounded-full bg-[#00c7be] flex justify-center items-center'>
                                         <BsCash className={`text-white`} />
                                     </div>
                                     <div>
