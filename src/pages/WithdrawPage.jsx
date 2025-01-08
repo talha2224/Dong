@@ -68,7 +68,7 @@ const WithdrawPage = () => {
 
 
 
-                <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-3 sm:mt-10'>
+                <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-3 sm:mt-10 sm:mb-0 mb-4'>
 
                     <p className='text-xl mt-7'>Withdraw Funds</p>
                     <p className='text-[#FF8A65]'>A small fee of 1% or $5 applies when converting credits back to your currency</p>

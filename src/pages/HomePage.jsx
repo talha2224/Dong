@@ -10,7 +10,6 @@ import Pos from '../assets/pos.png'
 import Neg from '../assets/neg.png'
 
 import Coin from '../assets/coin.png'
-import Line from '../assets/line.png'
 import { FaEye } from "react-icons/fa";
 import { BsCash } from 'react-icons/bs';
 

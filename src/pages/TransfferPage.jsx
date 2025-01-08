@@ -82,7 +82,7 @@ const TransfferPage = () => {
                 </div>
 
 
-                <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] shadow-xl rounded-3xl border border-[#FFFEFE] py-3 px-5 mt-3 sm:mt-10'>
+                <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] shadow-xl rounded-3xl border border-[#FFFEFE] py-3 px-5 mt-3 sm:mt-10 sm:mb-0 mb-4'>
 
                     <p className='text-lg mt-7'>Transfer Credits</p>
                     <p className='text-[#000] mt-4 text-sm'>User ID</p>

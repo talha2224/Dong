@@ -1,21 +1,18 @@
 import React, { useState } from 'react'
 import DashboardNav from '../components/DashboardNav'
 import Coin from '../assets/coin.png'
-import Line from '../assets/line.png'
 import Cards from '../assets/visa.png'
 import MasterCard from '../assets/mastercard.png'
 import Add from '../assets/add.png'
 import { FaAngleRight } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
-import { MdOutlineArrowOutward } from 'react-icons/md'
 import { FaEye } from 'react-icons/fa'
-
+import Pos from '../assets/pos.png'
+import Neg from '../assets/neg.png'
 const BuyPage = () => {
 
     const [openModel, setopenModel] = useState(false)
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-    const data = [1, 2, 3, 4, 5]
 
     return (
 
@@ -80,7 +77,7 @@ const BuyPage = () => {
                     <img src={Add} alt="" className='mt-3 cursor-pointer' onClick={() => setopenModel(!openModel)} />
                 </div>
 
-                <div className='w-[25rem] mt-2'>
+                <div className='w-[25rem] mt-2 mb-4 sm:mb-0'>
 
 
                     <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
@@ -89,26 +86,69 @@ const BuyPage = () => {
 
                         <div className='mt-3'>
 
-                            {
-                                data?.map((item, index) => (
-                                    <div key={item} className='flex justify-between items-start mt-3'>
+                            <div className='flex justify-between items-start mt-3'>
 
-                                        <div className='flex gap-x-3 items-center'>
-                                            <img src={Coin} alt="" className='h-[2rem]' />
-                                            <div>
-                                                <h1 className='font-medium'>1 Đ - $0.04 - <span className='text-[#a7a7a7] text-sm'>$0.04</span></h1>
-                                            </div>
-                                        </div>
-
-                                        <div className='flex items-center gap-x-2'>
-                                            <img src={Line} alt="" />
-                                            <h1 className='text-[#34C759]'>+32%</h1>
-                                        </div>
-
+                                <div className='flex gap-x-3 items-center'>
+                                    <img src={Coin} alt="" className='h-[2rem]' />
+                                    <div>
+                                        <h1 className='font-medium'>1 Đ - <span className='text-[#a7a7a7] text-sm'>$0.04</span> </h1>
                                     </div>
-                                ))
-                            }
+                                </div>
 
+                                <div className=' flex items-center gap-x-2'>
+                                    <img src={Pos} alt="" />
+                                    <h1 className='text-[#27c249]'>+32%</h1>
+                                </div>
+
+                            </div>
+
+                            <div className='flex justify-between items-start mt-3'>
+
+                                <div className='flex gap-x-3 items-center'>
+                                    <img src={Coin} alt="" className='h-[2rem]' />
+                                    <div>
+                                        <h1 className='font-medium'>12 Đ - <span className='text-[#a7a7a7] text-sm'>$0.48</span> </h1>
+                                    </div>
+                                </div>
+
+                                <div className=' flex items-center gap-x-2'>
+                                    <img src={Neg} alt="" />
+                                    <h1 className='text-[#ec3434]'>+0.2%</h1>
+                                </div>
+
+                            </div>
+
+                            <div className='flex justify-between items-start mt-3'>
+
+                                <div className='flex gap-x-3 items-center'>
+                                    <img src={Coin} alt="" className='h-[2rem]' />
+                                    <div>
+                                        <h1 className='font-medium'>21 Đ - <span className='text-[#a7a7a7] text-sm'>$0.84</span> </h1>
+                                    </div>
+                                </div>
+
+                                <div className=' flex items-center gap-x-2'>
+                                    <img src={Pos} alt="" />
+                                    <h1 className='text-[#27c249]'>+22%</h1>
+                                </div>
+
+                            </div>
+
+                            <div className='flex justify-between items-start mt-3'>
+
+                                <div className='flex gap-x-3 items-center'>
+                                    <img src={Coin} alt="" className='h-[2rem]' />
+                                    <div>
+                                        <h1 className='font-medium'>55 Đ - <span className='text-[#a7a7a7] text-sm'>$2.20</span> </h1>
+                                    </div>
+                                </div>
+
+                                <div className=' flex items-center gap-x-2'>
+                                    <img src={Neg} alt="" />
+                                    <h1 className='text-[#ec3434]'>-12%</h1>
+                                </div>
+
+                            </div>
 
                         </div>
 
