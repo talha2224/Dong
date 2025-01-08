@@ -9,6 +9,7 @@ import { ImCross } from "react-icons/im";
 import { FaEye } from 'react-icons/fa'
 import Pos from '../assets/pos.png'
 import Neg from '../assets/neg.png'
+import { MdOutlineArrowOutward } from 'react-icons/md'
 const BuyPage = () => {
 
     const [openModel, setopenModel] = useState(false)
@@ -20,10 +21,13 @@ const BuyPage = () => {
             <DashboardNav />
 
 
-            <div className='flex sm:hidden justify-center items-center mt-[2rem]'>
-                <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
+                <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] mt-10 py-3 px-5 sm:hidden'>
 
-                    <p className='text-[#a7a7a7] text-sm '>Total Balance </p>
+                    <div className='flex justify-between items-center mt-3 sm:mt-7'>
+                        <p className='text-[#a7a7a7] text-lg hidden md:block font-semibold'>Welcome, Stuart</p>
+                        <p className='text-[#a7a7a7] text-lg md:hidden block'>Total Balance </p>
+                        <MdOutlineArrowOutward className='text-xl' />
+                    </div>
 
                     <div className='flex items-center gap-x-2 md:mt-2'>
                         <h1 className='text-2xl font-semibold '>$327,591,814,610</h1>
@@ -33,10 +37,16 @@ const BuyPage = () => {
 
                     <p className='text-[#a7a7a7] text-lg hidden md:block'>Total Balance ($USD)</p>
 
+                    <div className='mt-10 sm:my-7'>
+                        <p className='text-[#a7a7a7] text-sm'>Credit Balance</p>
+                        <div className='flex items-center gap-x-2 mt-1'>
+                            <img src={Coin} alt="" className='w-[2rem]' />
+                            <h1 className='text-xl font-medium'>Đ 8,189,795,365,250</h1>
+                        </div>
+                    </div>
 
 
                 </div>
-            </div>
 
             <div className='flex justify-center items-start gap-x-7 mt-[1rem] flex-wrap'>
 
