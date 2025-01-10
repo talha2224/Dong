@@ -91,8 +91,8 @@ const TransfferPage = () => {
                     <input type="number" name="" id="" placeholder='0.00' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
 
                     <div className='h-[2.8rem] rounded-md px-3 mt-4 outline-none bg-white w-[100%] flex justify-between items-center cursor-pointer' onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-                        <p className='text-[#a7a7a7]'>Enter Pin</p>
-                        <button className='text-white bg-red-600 px-2 py-1 rounded-md text-sm'>Send Code</button>
+                        <input type='text' className='text-[#a7a7a7] bg-transparent flex-1 outline-none' placeholder='Enter Pin'/>
+                        {/* <button className='text-white bg-red-600 px-2 py-1 rounded-md text-sm'>Send Code</button> */}
                     </div>
                     <button onClick={showMessageFunc} className='bg-[#0197B2] text-white w-[100%] h-[2.5rem] rounded-md text-sm mt-5'>Confirm</button>
 
