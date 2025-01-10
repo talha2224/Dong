@@ -30,18 +30,18 @@ const HomePage = () => {
                     <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
 
                         <div className='flex justify-between items-center mt-3 sm:mt-7'>
-                            <p className='text-[#a7a7a7] text-lg hidden md:block font-semibold'>Welcome, Stuart</p>
-                            <p className='text-[#a7a7a7] text-lg md:hidden block'>Total Balance </p>
+                            <p className='text-[#a7a7a7] text-lg hidden md:block font-medium'>Welcome, Stuart</p>
+                            <p className='text-[#a7a7a7] md:hidden block'>Total Balance </p>
                             <MdOutlineArrowOutward className='text-xl' />
                         </div>
 
-                        <div className='flex items-center gap-x-2 md:mt-2'>
+                        <p className='text-[#a7a7a7] text-lg hidden md:block mt-3'>Total Balance ($USD)</p>
+                        <div className='flex items-center gap-x-2 md:mt-1'>
                             <h1 className='text-2xl font-semibold '>$327,591,814,610</h1>
                             <FaEye className='pr-1 md:text-black text-[#FF8A65] text-xl'
                             />
                         </div>
 
-                        <p className='text-[#a7a7a7] text-lg hidden md:block'>Total Balance ($USD)</p>
 
                         <div className='mt-10 sm:my-7'>
                             <p className='text-[#a7a7a7] text-sm'>Credit Balance</p>

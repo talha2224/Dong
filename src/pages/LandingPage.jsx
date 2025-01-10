@@ -22,7 +22,9 @@ const LandingPage = () => {
         <div className='mt-4'>
           <h1 className='text-5xl font-medium md:block hidden'>Securely Buy, Transfer, <br /> and Manage Your Credits <br /> in One Place</h1>
           <h1 className='text-5xl font-medium md:hidden block'>Securely Buy, Transfer, <br /> and Manage Your Credits <br /> in One Place</h1>
-          <p className='text-[#A7A7A7] mt-4'>Experience a seamless and secure platform to purchase, exchange, and withdraw credits with no fees to buy and full control over your transactions</p>
+          <p className='text-[#A7A7A7] mt-4 md:hidden block'>Experience a seamless and secure platform to purchase, exchange, and withdraw credits with no fees to buy and full control over your transactions</p>
+          <p className='text-[#A7A7A7] mt-4 md:block hidden'>Experience a seamless and secure platform to purchase, exchange, <br /> and withdraw credits with no fees to buy and full control over<br /> your transactions</p>
+
           <Link to={"/register"}>
             <button className='bg-[#0197B2] text-white w-[157px] h-[45px] rounded-[50px] text-sm mt-7'> Get Started</button>
           </Link>
