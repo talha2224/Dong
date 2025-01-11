@@ -21,7 +21,10 @@ const BuyPage = () => {
             <DashboardNav />
 
 
-                <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] mt-10 py-3 px-5 sm:hidden'>
+            <div className='flex justify-center items-start gap-x-4 mt-[5rem] flex-wrap'>
+
+
+                <div className='w-[100%] sm:w-[24rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
 
                     <div className='flex justify-between items-center mt-3 sm:mt-7'>
                         <p className='text-[#a7a7a7] text-lg hidden md:block font-semibold'>Welcome, Stuart</p>
@@ -48,9 +51,7 @@ const BuyPage = () => {
 
                 </div>
 
-            <div className='flex justify-center items-start gap-x-7 mt-[1rem] flex-wrap'>
-
-                <div className='w-[25rem] mt-2'>
+                <div className=' w-[100%] sm:w-[24rem] mt-2'>
 
                     <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
 
@@ -83,11 +84,11 @@ const BuyPage = () => {
                 </div>
 
                 <div className='mt-2 flex justify-center items-center flex-col '>
-                    <img src={Cards} alt="" />
-                    <img src={Add} alt="" className='mt-3 cursor-pointer' onClick={() => setopenModel(!openModel)} />
+                    <img src={Cards} alt="" className='w-[100%] sm:w-[24rem]' />
+                    <img src={Add} alt="" className='mt-3 cursor-pointer w-[100%] sm:w-[24rem]' onClick={() => setopenModel(!openModel)} />
                 </div>
 
-                <div className='w-[25rem] mt-2 mb-4 sm:mb-0'>
+                <div className='w-[100%] sm:w-[24rem] mt-2 mb-4 sm:mb-0'>
 
 
                     <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5'>
@@ -172,7 +173,7 @@ const BuyPage = () => {
 
             {openModel && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"> {/* z-index for overlay */}
-                    <div className="bg-white rounded-2xl p-6 w-[25rem] shadow-lg">
+                    <div className="bg-white rounded-2xl p-6 w-[24rem] shadow-lg">
                         <div className="flex justify-between items-center mb-4">
                             <div className='flex items-center gap-x-2'>
                                 <h2 className="text-lg font-medium">Add new card</h2>

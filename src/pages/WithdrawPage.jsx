@@ -21,25 +21,10 @@ const WithdrawPage = () => {
 
         <div className='px-3 sm:px-10 py-4 bg-[#F7F7F7] w-screen h-screen'>
             <DashboardNav />
-            <div className='flex justify-center items-center flex-col'>
 
-                <div className='w-[100%] md:w-[70%] h-[5rem] rounded-md px-3 bg-[#FAF8F8] border border-[#FFFEFE] mt-10 hidden sm:flex justify-center items-center gap-x-7 flex-wrap'>
-                    <div className='sm:mt-0 mt-1'>
-                        <p className='text-[#a7a7a7] sm:text-base text-sm'>Total Balance ($USD)</p>
-                        <h1 className='text-2xl font-semibold'>$327,591,814,610</h1>
-                    </div>
-                    <div className='sm:mt-0 mt-1'>
-                        <p className='text-[#a7a7a7] sm:text-base text-sm'>Credit Balance (Đ)</p>
-                        <div className='flex gap-x-3 items-center'>
-                            <img src={Coin} alt="" className='h-[2rem]' />
-                            <div>
-                                <h1 className='font-medium'>Đ 8,189,795,365,250</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className='flex justify-center items-start gap-x-10 mt-10 flex-wrap'>
 
-                <div className='w-[100%] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] mt-10 py-3 px-5 sm:hidden'>
+                <div className='w-[100%] sm:w-[25rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] mt-10 py-3 px-5'>
 
                     <div className='flex justify-between items-center mt-3 sm:mt-7'>
                         <p className='text-[#a7a7a7] text-lg hidden md:block font-semibold'>Welcome, Stuart</p>
@@ -65,15 +50,12 @@ const WithdrawPage = () => {
 
 
                 </div>
-
-
-
                 <div className='w-[100%] sm:w-[30rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] py-3 px-5 mt-3 sm:mt-10 sm:mb-0 mb-4'>
 
                     <p className='text-xl mt-7'>Withdraw Funds</p>
                     <p className='text-[#FF8A65]'>A small fee of 1% or $5 applies when converting credits back to your currency</p>
                     <p className='text-[#000] mt-4 text-sm'>Amount</p>
-                    <input type="number" name="" id="" placeholder='Enter Amount To Withdraw (USD)' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
+                    <input type="number" name="" id="" placeholder='Enter Amount To Withdraw' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
                     <input type="number" name="" id="" placeholder='Đ 0' className='h-[2.5rem] rounded-md px-3 mt-5 outline-none bg-white w-[100%]' />
 
                     <p className='mt-8 text-sm'>Payment Method</p>
