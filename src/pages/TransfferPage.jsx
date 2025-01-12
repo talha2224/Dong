@@ -42,18 +42,13 @@ const TransfferPage = () => {
                 <div className='w-[100%] sm:w-[25rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] mt-10 py-3 px-5'>
 
                     <div className='flex justify-between items-center mt-3 sm:mt-7'>
-                        <p className='text-[#a7a7a7] text-lg hidden md:block font-semibold'>Welcome, Stuart</p>
-                        <p className='text-[#a7a7a7] text-lg md:hidden block'>Total Balance </p>
-                        <MdOutlineArrowOutward className='text-xl' />
+                        <p className='text-[#a7a7a7] text-lg block'>Total Balance </p>
                     </div>
 
                     <div className='flex items-center gap-x-2 md:mt-2'>
                         <h1 className='text-2xl font-semibold '>$327,591,814,610</h1>
-                        <FaEye className='pr-1 md:text-black text-[#FF8A65] text-xl'
-                        />
+                        <FaEye className='pr-1 md:text-black text-[#FF8A65] text-xl'/>
                     </div>
-
-                    <p className='text-[#a7a7a7] text-lg hidden md:block'>Total Balance ($USD)</p>
 
                     <div className='mt-10 sm:my-7'>
                         <p className='text-[#a7a7a7] text-sm'>Credit Balance</p>
@@ -76,7 +71,7 @@ const TransfferPage = () => {
                     <input type="number" name="" id="" placeholder='Đ 0' className='h-[2.5rem] rounded-md px-3 mt-1 outline-none bg-white w-[100%]' />
 
                     <div className='h-[2.8rem] rounded-md px-3 mt-4 outline-none bg-white w-[100%] flex justify-between items-center cursor-pointer' onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-                        <input type='number' className='text-[#a7a7a7] bg-transparent flex-1 outline-none' placeholder='Enter Pin'/>
+                        <input type='number' className='text-[#a7a7a7] bg-transparent flex-1 outline-none' placeholder='Enter Pin' />
                         {/* <button className='text-white bg-red-600 px-2 py-1 rounded-md text-sm'>Send Code</button> */}
                     </div>
                     <button onClick={showMessageFunc} className='bg-[#0197B2] text-white w-[100%] h-[2.5rem] rounded-md text-sm mt-5'>Confirm</button>
