@@ -42,7 +42,7 @@ const TransfferPage = () => {
                 <div className='w-[100%] sm:w-[25rem] bg-[#FAF8F8] rounded-3xl shadow-xl border border-[#FFFEFE] mt-10 py-3 px-5'>
 
                     <div className='flex justify-between items-center mt-3 sm:mt-7'>
-                        <p className='text-[#a7a7a7] text-lg block'>Total Balance </p>
+                        <p className='text-[#a7a7a7] text-lg block'>Total Balance ($USD) </p>
                     </div>
 
                     <div className='flex items-center gap-x-2 md:mt-2'>
