@@ -236,7 +236,7 @@ const HomePage = () => {
 
                         <p className='text-lg mt-0'>Buy Credits</p>
                         <p className='text-[#a7a7a7] mt-1 text-sm'><span className='text-black'>Amount</span> - minimum of 1 credit</p>
-                        <input type="number" name="" id="" placeholder='0.00' className='h-[2.5rem] rounded-md px-3 mt-2 outline-none bg-white w-[100%]' />
+                        <input type="number" name="" id="" placeholder='Đ 0' className='h-[2.5rem] rounded-md px-3 mt-2 outline-none bg-white w-[100%]' />
                         <p className='mt-3 text-sm'>Payment Method</p>
                         <div className='h-[2.5rem] rounded-md px-3 mt-2 outline-none bg-white w-[100%] flex justify-between items-center'>
                             <p>Select payment method</p>
